@@ -273,9 +273,7 @@
       var count = Math.random() < 0.4 ? 1 : 2;
       var shuffled = bolts.slice().sort(function () { return Math.random() - 0.5; });
       var picked = shuffled.slice(0, count);
-      var shouldShowFullFlash = Math.random() < 0.35;
 
-      if (shouldShowFullFlash && flash) flash.classList.add("active");
       if (peakGlow) peakGlow.classList.add("active");
 
       picked.forEach(function (bolt, index) {
