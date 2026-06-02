@@ -374,6 +374,27 @@ body[data-theme="jonah"][data-prayer-state="praying"] img[alt="altar"] {
   filter: none !important;
 }
 
+body.codex-theme-jonah [data-codex-theme-background="true"],
+body[data-theme="jonah"] [data-codex-theme-background="true"],
+body[data-extra-theme="jonah"] [data-codex-theme-background="true"],
+body[data-current-theme="요나의 고래뱃속"] [data-codex-theme-background="true"] {
+  transition: filter 1000ms ease-in-out !important;
+}
+
+body.codex-theme-jonah[data-prayer-state="waiting"] [data-codex-theme-background="true"],
+body[data-theme="jonah"][data-prayer-state="waiting"] [data-codex-theme-background="true"],
+body[data-extra-theme="jonah"][data-prayer-state="waiting"] [data-codex-theme-background="true"],
+body[data-current-theme="요나의 고래뱃속"][data-prayer-state="waiting"] [data-codex-theme-background="true"] {
+  filter: brightness(0.82) saturate(0.92) blur(1.8px) !important;
+}
+
+body.codex-theme-jonah[data-prayer-state="praying"] [data-codex-theme-background="true"],
+body[data-theme="jonah"][data-prayer-state="praying"] [data-codex-theme-background="true"],
+body[data-extra-theme="jonah"][data-prayer-state="praying"] [data-codex-theme-background="true"],
+body[data-current-theme="요나의 고래뱃속"][data-prayer-state="praying"] [data-codex-theme-background="true"] {
+  filter: none !important;
+}
+
 body[data-theme="sinal"][data-prayer-state="waiting"] img[alt="altar"] {
   filter: brightness(0.72) saturate(0.92) blur(0.1px) !important;
   transition: filter 1000ms ease-in-out !important;
@@ -390,6 +411,7 @@ body[data-current-theme="어두운 밤"][data-prayer-state="waiting"] img[alt="a
   opacity: 1 !important;
   display: block !important;
   filter: brightness(0.72) saturate(0.92) !important;
+  transition: filter 1000ms ease-in-out !important;
 }
 
 body.codex-theme-night[data-prayer-state="praying"] img[alt="altar"],
@@ -398,11 +420,42 @@ body[data-current-theme="어두운 밤"][data-prayer-state="praying"] img[alt="a
   opacity: 1 !important;
   display: block !important;
   filter: none !important;
+  transition: filter 1000ms ease-in-out !important;
+}
+
+body.codex-theme-night [data-codex-theme-background="true"],
+body.night-theme-active [data-codex-theme-background="true"],
+body[data-current-theme="어두운 밤"] [data-codex-theme-background="true"] {
+  transition: filter 1000ms ease-in-out !important;
+}
+
+body.codex-theme-night[data-prayer-state="waiting"] [data-codex-theme-background="true"],
+body.night-theme-active[data-prayer-state="waiting"] [data-codex-theme-background="true"],
+body[data-current-theme="어두운 밤"][data-prayer-state="waiting"] [data-codex-theme-background="true"] {
+  filter: brightness(0.70) saturate(0.94) !important;
+}
+
+body.codex-theme-night[data-prayer-state="praying"] [data-codex-theme-background="true"],
+body.night-theme-active[data-prayer-state="praying"] [data-codex-theme-background="true"],
+body[data-current-theme="어두운 밤"][data-prayer-state="praying"] [data-codex-theme-background="true"] {
+  filter: none !important;
+}
+
+body.codex-theme-night .darknight-waiting-dim,
+body.night-theme-active .darknight-waiting-dim,
+body[data-current-theme="어두운 밤"] .darknight-waiting-dim {
+  transition: opacity 1000ms ease-in-out !important;
+}
+
+body.codex-theme-night[data-prayer-state="waiting"] .darknight-waiting-dim,
+body.night-theme-active[data-prayer-state="waiting"] .darknight-waiting-dim,
+body[data-current-theme="어두운 밤"][data-prayer-state="waiting"] .darknight-waiting-dim {
+  display: block !important;
+  opacity: 1 !important;
 }
 
 body.codex-theme-night[data-prayer-state="praying"] .darknight-waiting-dim,
 body.night-theme-active[data-prayer-state="praying"] .darknight-waiting-dim,
 body[data-current-theme="어두운 밤"][data-prayer-state="praying"] .darknight-waiting-dim {
   opacity: 0 !important;
-  display: none !important;
 }
